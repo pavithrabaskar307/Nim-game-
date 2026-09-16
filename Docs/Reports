@@ -1,0 +1,64 @@
+Nim Game AI – Game Search
+1. Abstract
+Nim is a mathematical strategy game in which players remove objects from one or more piles. This project develops an AI agent that plays Nim optimally using game-search techniques such as Minimax and the theory of Grundy numbers. The AI analyzes the current game state, identifies winning and losing positions, and selects the best possible move. The system demonstrates how artificial intelligence can use mathematical reasoning to guarantee a win whenever a winning strategy exists.
+2. Introduction
+Artificial Intelligence enables computers to make decisions and solve problems intelligently. Game-playing AI is an important application of AI because it involves decision-making, search, and strategy.
+Nim is a two-player game where players take turns removing one or more objects from a single pile. The player who removes the last object wins. In this project, an AI agent is designed to play Nim optimally by analyzing possible moves and applying the mathematical concept of Grundy numbers or the Minimax algorithm.
+3. Problem Statement
+Develop an AI-based Nim game player that can analyze the current game state, determine whether it is a winning or losing position, and select an optimal move. The AI should use game-search techniques or Grundy number theory to ensure that it wins from every possible winning position when the opponent plays optimally.
+4. Objectives
+To develop an AI agent that plays Nim optimally.
+To represent the game using states and possible actions.
+To apply Minimax or Grundy number theory for decision-making.
+To identify winning and losing game positions.
+To select the best move from every winning position.
+To demonstrate the mathematical theory behind optimal Nim play.
+To provide an interactive game between the user and the AI.
+5. Agent Components
+Component
+Description
+Environment
+Nim game consisting of one or more piles of objects.
+State
+Current number of objects in each pile.
+Initial State
+Starting configuration of all piles.
+Actions
+Removing one or more objects according to the game rules.
+Transition Model
+Updates the pile configuration after a move.
+Goal Test
+Checks whether the game has ended.
+Utility Function
+Gives a positive value for a win and a negative value for a loss.
+Performance Measure
+Winning the game using the fewest or optimal moves.
+6. Utility
+The utility function evaluates the outcome of the game from the AI's perspective.
++1 → AI wins.
+−1 → AI loses.
+0 → Draw or neutral state, if applicable.
+For standard Nim, the game normally ends with a win or loss. The AI selects moves that maximize its utility while assuming that the opponent will minimize the AI's chances of winning.
+7. Methodology
+Step 1: Initialize the Game
+Create the piles and define the initial number of objects in each pile.
+Step 2: Represent the Game State
+Represent the state as a list of pile sizes, such as [3, 4, 5].
+Step 3: Generate Possible Moves
+For each pile, generate all legal moves by removing one or more objects.
+Step 4: Analyze the State
+Calculate the XOR (Nim-sum) of all pile sizes:
+If N = 0, the position is a losing position for the player whose turn it is, assuming optimal play.
+If N ≠ 0, the position is a winning position.
+Step 5: Select the Optimal Move
+The AI chooses a move that makes the Nim-sum equal to zero. This leaves the opponent in a losing position.
+Step 6: Apply the Move
+Update the pile sizes and display the AI's selected action.
+Step 7: Repeat Until the Game Ends
+Continue alternating turns until all objects are removed.
+Step 8: Display the Result
+Declare the winner and explain the winning strategy used by the AI.
+8. Result
+The AI successfully identifies winning and losing positions using the Nim-sum strategy and selects optimal moves to win the game.
+9. Conclusion
+The project demonstrates how game-search techniques and Grundy number theory help AI make optimal decisions and play Nim intelligently.
