@@ -1,0 +1,31 @@
+## Requirements
+
+### Functional Requirements
+
+- The system must accept the number of objects in each pile.
+- The system must calculate the Nim-sum using the XOR operation.
+- The system must identify winning and losing positions.
+- The AI must select an optimal move from every winning position.
+- The system must display the selected move.
+- The system must handle different pile configurations.
+
+### Non-Functional Requirements
+
+- The system should provide fast responses.
+- The system should be easy to use.
+- The code should be simple and maintainable.
+- The system should produce accurate results.
+- The system should work using Python 3.x.
+
+### Software Requirements
+
+- Python 3.x
+- GitHub
+- Text Editor or IDE
+
+### Hardware Requirements
+
+- Computer or laptop
+- Minimum 4 GB RAM
+- Basic processor
+- Keyboard and display
